@@ -1,0 +1,1 @@
+﻿function plot(){	var canvas3 = document.getElementById('canvas3');	var context3 = canvas3.getContext('2d'); 	var graph3 = new Graph(context3,-0.5*tend,tend,0,15,70,380,450,350);				graph3.drawgrid(tend / 10, tend / 20,1,0.25);				graph3.drawaxes('t','y');		for(var i=0; i < particles.length; i++){		graph3.plot(data_t, data_x[i], "rgb(183,0,"+i*50+")", true, true);	}}
